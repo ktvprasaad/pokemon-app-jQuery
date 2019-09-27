@@ -11,6 +11,9 @@ body {
 header {
   padding: 2px;
   margin: 1px;
+  max-width: 100%;
+  height: 40px;
+  background-color: beige;
 }
 form {
   display: inline-block;
@@ -180,11 +183,11 @@ button:hover {
   }
   @keyframes lSpacing {
     0%{
-      letter-spacing: -10px;
+      letter-spacing: -30px;
       opacity: 0;
     }
     50%{
-      letter-spacing: 5px;
+      letter-spacing: 7px;
       opacity: 1;
     }
     75%{
