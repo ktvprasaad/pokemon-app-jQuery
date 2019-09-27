@@ -149,18 +149,30 @@ pokemonRepository.loadList().then(function() {
 	});
 
 	var colorNum = (Math.floor(Math.random() * 5) + 1);
-
 	if(colorNum === 1) {
 		$('h1').css('color','royalblue');
+		$('label').css('color','royalblue');
+		$('#pokey').css('border','1px solid royalblue');
+		$('header').css('border-bottom', '1px solid royalblue');
 	} else if(colorNum === 2) {
 		$('h1').css('color','olive');
+		$('label').css('color','olive');
+		$('#pokey').css('border','1px solid olive');
+		$('header').css('border-bottom', '1px solid olive');
 	} else if(colorNum === 3) {
 		$('h1').css('color','coral');
+		$('label').css('color','coral');
+		$('#pokey').css('border','1px solid coral');
+		$('header').css('border-bottom', '1px solid coral');
 	} else if(colorNum === 4) {
 		$('h1').css('color','darkgoldenrod');
+		$('label').css('color','darkgoldenrod');
+		$('#pokey').css('border','1px solid darkgoldenrod');
+		$('header').css('border-bottom', '1px solid darkgoldenrod');
 	} else if(colorNum === 5) {
 		$('h1').css('color','purple');
+		$('label').css('color','purple');
+		$('#pokey').css('border','1px solid purple');
+		$('header').css('border-bottom', '1px solid purple');
 	}
-
-
 });
