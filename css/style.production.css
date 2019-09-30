@@ -1,0 +1,90 @@
+body {
+  font-family: 'Sriracha', cursive;
+  background-color: white;
+  color: navy;
+  font-weight: 400;
+  line-height: 1;
+}
+h1 {
+  -webkit-animation: 2.5s lSpacing 1 alternate linear;
+          animation: 2.5s lSpacing 1 alternate linear;
+}
+@-webkit-keyframes lSpacing {
+  0%{
+    letter-spacing: -20px;
+    opacity: 0;
+  }
+  50%{
+    letter-spacing: 7px;
+    opacity: 1;
+  }
+  75%{
+    letter-spacing: 3px;
+    opacity: 1;
+  }
+  100%{
+    letter-spacing: 0px;
+    opacity: 1;
+  }
+}
+@keyframes lSpacing {
+  0%{
+    letter-spacing: -20px;
+    opacity: 0;
+  }
+  50%{
+    letter-spacing: 7px;
+    opacity: 1;
+  }
+  75%{
+    letter-spacing: 3px;
+    opacity: 1;
+  }
+  100%{
+    letter-spacing: 0px;
+    opacity: 1;
+  }
+}
+button {
+  border-style: none;
+}
+ul > li {
+  list-style-type: none;
+}
+#reset {
+  color: white;
+  margin-left: 10px;
+}
+.btn-pokemon {
+  text-align: center;
+  font-size: 24px;
+  border: none;
+  width: 175px;
+  height: 175px;
+  margin: 12px;
+  border-radius: 10%;
+  color: midnightblue;
+  /* transition => transition-property transition-duration transition-delay */
+  -webkit-transition: font-size .8s .3s, -webkit-transform 1s .2s ease-in-out;
+  transition: font-size .8s .3s, -webkit-transform 1s .2s ease-in-out;
+  -o-transition: font-size .8s .3s, transform 1s .2s ease-in-out;
+  transition: font-size .8s .3s, transform 1s .2s ease-in-out;
+  transition: font-size .8s .3s, transform 1s .2s ease-in-out, -webkit-transform 1s .2s ease-in-out;
+}
+.btn-pokemon:hover {
+  cursor: pointer;
+  text-align: center;
+  color: midnightblue;
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%);
+  -webkit-transform: skewX(10deg);
+      -ms-transform: skewX(10deg);
+          transform: skewX(10deg);
+}
+.modal-body > div > img {
+  float: left;
+}
+.modal-body > div > p{
+  padding: 10px;
+  margin-left: 100px;
+}
