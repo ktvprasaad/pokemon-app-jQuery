@@ -1,5 +1,4 @@
 // IIFE - Immeditaly Invoked Function Expression --> (function () {})();
-//(function () {
 var $, console;
 var pokemonRepository = (function () {
     'use strict';
@@ -112,21 +111,17 @@ pokemonRepository.loadList().then(function () {
         $('h1,label').css('color', 'royalblue');
         $('.pokey').css('border', '1px solid royalblue');
         $('nav').css('border-bottom', '1px outset royalblue');
-        $('#reset').css('background-color', 'royalblue');
         $('.btn-pokemon').css('background-color', '#b8c7f4');
     } else if (colorNum === 2) {
         $('h1,label').css('color', 'darkolivegreen');
         $('.pokey').css('border', '1px solid darkolivegreen');
         $('nav').css('border-bottom', '1px outset darkolivegreen');
-        $('#reset').css('background-color', 'darkolivegreen');
         $('.btn-pokemon').css('background-color', '#c0d49e');
     } else if (colorNum === 3) {
         $('h1,label').css('color', 'purple');
         $('.pokey').css('border', '1px solid purple');
         $('nav').css('border-bottom', '1px outset purple');
-        $('#reset').css('background-color', 'purple');
         $('.btn-pokemon').css('background-color', '#ead5ff');
     }
     //});
 });
-//})(); 
