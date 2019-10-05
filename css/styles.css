@@ -29,10 +29,6 @@ h1 {
 button {
   border-style: none;
 }
-#reset {
-  color: white;
-  margin-left: 10px;
-}
 .btn-pokemon {
   text-align: center;
   font-size: 24px;
@@ -52,7 +48,7 @@ button {
   filter: brightness(85%);
   transform: skewX(10deg);
 }
-.btn-pokemon:focus, #reset:focus {
+.btn-pokemon:focus {
 	box-shadow: 5px 5px grey;
 }
 .modal-body > div > img {
