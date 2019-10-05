@@ -48,10 +48,6 @@ h1 {
 button {
   border-style: none;
 }
-#reset {
-  color: white;
-  margin-left: 10px;
-}
 .btn-pokemon {
   text-align: center;
   font-size: 24px;
@@ -78,7 +74,7 @@ button {
       -ms-transform: skewX(10deg);
           transform: skewX(10deg);
 }
-.btn-pokemon:focus, #reset:focus {
+.btn-pokemon:focus {
 	-webkit-box-shadow: 5px 5px grey;
 	        box-shadow: 5px 5px grey;
 }
