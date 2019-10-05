@@ -29,9 +29,6 @@ h1 {
 button {
   border-style: none;
 }
-ul > li {
-  list-style-type: none;
-}
 #reset {
   color: white;
   margin-left: 10px;
@@ -40,20 +37,23 @@ ul > li {
   text-align: center;
   font-size: 24px;
   border: none;
-  width: 175px;
-  height: 175px;
+  width: 150px;
+  height: 150px;
   margin: 12px;
   border-radius: 10%;
   color: midnightblue;
   /* transition => transition-property transition-duration transition-delay */
-  transition: font-size .8s .3s, transform 1s .2s ease-in-out;
+  transition: font-size .8s .3s, transform 1s .2s ease-out;
 }
 .btn-pokemon:hover {
   cursor: pointer;
   text-align: center;
   color: midnightblue;
-  filter: brightness(75%);
+  filter: brightness(85%);
   transform: skewX(10deg);
+}
+.btn-pokemon:focus, #reset:focus {
+	box-shadow: 5px 5px grey;
 }
 .modal-body > div > img {
   float: left;
