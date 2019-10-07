@@ -1,5 +1,5 @@
 // IIFE - Immeditaly Invoked Function Expression --> (function () {})();
-var $, console;
+var $;
 var pokemonRepository = (function () {
     'use strict';
     var repository = [],
@@ -16,11 +16,11 @@ var pokemonRepository = (function () {
             dataType: 'json'
         }).then(function (item) {
             //console.log(item.results); //array of objects for JS generated */
-            $.each(item.results, (function (index, item) {
+            $.each(item.results, (function (index, result) {
                 //console.log(item);
                 var pokemon = {
-                    name: item.name,
-                    detailsUrl: item.url
+                    name: result.name,
+                    detailsUrl: result.url
                 };
                 add(pokemon);
             }));
