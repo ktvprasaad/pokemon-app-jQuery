@@ -7,6 +7,8 @@ body {
 }
 h1 {
   animation: 2.5s lSpacing 1 alternate linear;
+  white-space: nowrap;
+  overflow: hidden;
 }
 @keyframes lSpacing {
   0%{
@@ -50,6 +52,9 @@ button {
 }
 .btn-pokemon:focus {
 	box-shadow: 5px 5px grey;
+}
+.btn-pokemon:active {
+    color: midnightblue !important;
 }
 .modal-body > div > img {
   float: left;
